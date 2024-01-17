@@ -9,6 +9,7 @@ a.active {
     color: #307510 !important;
 }
 a:hover {
+
     border-bottom: 2px solid salmon !important;
     color: salmon !important;
 }
@@ -23,6 +24,19 @@ a:hover {
     font-size: 10px !important;
     color: #000;
     padding-bottom: 8px;
+}
+.btn-card {
+    color:#BDC9B8 !important;
+    border: 1px solid #307510 !important;
+    box-shadow: 1px 2px 4px #BDC9B8;
+    position: absolute !important;
+    right: 0px !important;
+    bottom: 16px !important;
+    background-color: white !important;;
+}
+.btn-card:hover {
+    border: 1px solid salmon !important;
+
 }
 
 
