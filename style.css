@@ -1,3 +1,9 @@
+body {
+    font-family: 'Nunito', sans-serif !important;
+}
+h3 {
+    font-size: 24px !important;
+}
 h4{
     font-size: 16px !important;
 }
@@ -21,9 +27,11 @@ a:hover {
 }
 .menu-link>a {
     margin-right: 2vw !important;
-    font-size: 10px !important;
+    font-size: 12px !important;
     color: #000;
     padding-bottom: 12px;
+    font-weight: 700;
+    padding-top: 4px !important;
 }
 .btn-card {
     color:#307510 !important;
