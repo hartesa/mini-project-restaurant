@@ -1,5 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif !important;
+    min-width: 468px !important;
 }
 h3 {
     font-size: 24px !important;
@@ -9,16 +10,18 @@ h4{
 }
 a {
     text-decoration: none !important; 
+    transition: all 0.2s ease-in-out;
 }
 a.active {
     border-bottom: 2px solid #307510 !important;
     color: #307510 !important;
+    font-weight: 900 !important;
 }
 a:hover {
-
     border-bottom: 2px solid salmon !important;
     color: salmon !important;
 }
+
 .positive-edge, .recommended-menu {
     margin-top: 120px !important;
 }
@@ -45,9 +48,7 @@ a:hover {
 }
 .btn-card:hover {
     border: 1px solid salmon !important;
-
 }
-
 
 footer {
     width: auto !important;
@@ -58,6 +59,28 @@ footer {
 .social-media {
     padding-top: 36px !important;
 }
+.social-media a:hover {
+    border-bottom: none !important;;
+}
+.social-media-icons a>svg:hover path {
+    fill: wheat !important;
+    transition: all 0.2s ease-in-out;
+}
+.afternote {
+    font-size: 12px !important;
+    font-weight: 700;
+}
+.afternote>a {
+    color: white !important;
+}
+.afternote svg {
+    width: 18px !important;
+}
+.afternote>a:hover {
+    color: #307510 !important;
+    border-bottom: none !important;;
+
+}
 
 @media (max-width: 768px) {
     .btn-card {
@@ -65,8 +88,20 @@ footer {
         right: 100px !important;
         bottom: -16px !important;
     }
-    .auto-booster-logo {
+    nav .auto-booster-logo {
         position: absolute !important;
-        left: 46px !important;
+        left: 40px !important;
+    }
+    .afternote {
+        font-size: 10px !important;
+        position: relative !important;
+        top: -12px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    footer .auto-booster-logo {
+        position: relative !important;
+        top: -4px !important;
     }
 }
