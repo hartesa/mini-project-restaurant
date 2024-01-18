@@ -4,6 +4,7 @@ body {
 }
 h3 {
     font-size: 24px !important;
+    font-weight: 700 !important;
 }
 h4{
     font-size: 16px !important;
@@ -35,6 +36,13 @@ a:hover {
     padding-bottom: 12px;
     font-weight: 700;
     padding-top: 4px !important;
+}
+.card {
+    width: 40vw !important;
+    max-width: 600px !important;
+}
+.card-title {
+    font-family: Orienta, sans-serif !important;
 }
 .btn-card {
     color:#307510 !important;
@@ -103,5 +111,18 @@ footer {
     footer .auto-booster-logo {
         position: relative !important;
         top: -4px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .recommended-menu h3 {
+        font-size: 36px !important;
+    }
+    .card-title {
+        font-size: 26px !important;
+    }
+    .card .btn-card {
+        font-size: 20px !important;
+        font-weight: 100 !important;
     }
 }
