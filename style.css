@@ -1,4 +1,8 @@
-body {
+* {
+    margin-right: 0px !important;
+    box-sizing: border-box !important;
+}
+    body {
     font-family: 'Nunito', sans-serif !important;
     min-width: 468px !important;
 }
@@ -25,6 +29,9 @@ a:hover {
     color: salmon !important;
 }
 
+.container {
+        margin-right: auto !important;
+    }
 .positive-edge, .recommended-menu {
     margin-top: 120px !important;
 }
@@ -32,11 +39,14 @@ a:hover {
     font-family: orienta, sans-serif !important;
     position: relative !important;
 }
-.positive-edge .icon-4 {
+.positive-edge .icon-4, .positive-edge .icon-5, .positive-edge .icon-6{
     text-align: left !important;
 }
-.positive-edge .icon-4 span {
+.positive-edge .icon-4 span{
     margin-left: 8px !important;
+}
+.positive-edge .icon-5 span, .positive-edge .icon-6 span{
+    margin-left: 4px !important;
 }
 .positive-edge i img{
     width: 40px !important;
@@ -50,6 +60,9 @@ a:hover {
 }
 .recommended-menu span {
     margin: 8px !important;
+}
+.recommended-menu img {
+    min-width: 160px !important;
 }
 .menu-link {
     padding-top: 12px !important;
@@ -119,9 +132,14 @@ footer .auto-booster-logo {
 }
 .afternote>a:hover {
     color: #307510 !important;
-    border-bottom: none !important;;
+    border-bottom: none !important;
 
 }
+
+@media (max-width: 300px) {
+
+}
+
 
 @media (max-width: 768px) {
     nav .auto-booster-logo {
@@ -132,10 +150,12 @@ footer .auto-booster-logo {
         display: none !important;
         visibility: hidden !important;
     }
+
     .recommended-menu {
         position:  relative !important;
         top: -60px !important;
     }       
+   
     .recommended-menu h3 {
         font-size: 18px !important;
         text-align: center !important;
@@ -166,14 +186,18 @@ footer .auto-booster-logo {
 }
 
 @media (min-width: 992px) {
+    .positive-edge .icon-5 span, .positive-edge .icon-6 span {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
     .recommended-menu h3 {
         font-size: 36px !important;
     }
     .card-title {
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
     .card .btn-card {
-        font-size: 20px !important;
+        font-size: 14px !important;
         font-weight: 100 !important;
     }
     footer .auto-booster-logo {
