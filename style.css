@@ -2,9 +2,11 @@ body {
     font-family: 'Nunito', sans-serif !important;
     min-width: 468px !important;
 }
+
 h3 {
+    font-family: 'Nunito', sans-serif;
     font-size: 24px !important;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
 }
 h4{
     font-size: 16px !important;
@@ -25,6 +27,29 @@ a:hover {
 
 .positive-edge, .recommended-menu {
     margin-top: 120px !important;
+}
+.positive-edge {
+    font-family: orienta, sans-serif !important;
+    position: relative !important;
+}
+.positive-edge .icon-4 {
+    text-align: left !important;
+}
+.positive-edge .icon-4 span {
+    margin-left: 8px !important;
+}
+.positive-edge i img{
+    width: 40px !important;
+}
+.positive-edge i img[src="icon1.svg"] {
+    width: 56px !important;
+}
+.positive-edge .icon-1 {
+    position:   relative !important;
+    top: -6px !important;
+}
+.recommended-menu span {
+    margin: 8px !important;
 }
 .menu-link {
     padding-top: 12px !important;
@@ -53,6 +78,7 @@ a:hover {
     bottom: 20px !important;
     background-color: white !important;;
     font-size: 12px !important;
+    min-width: 100px !important;
 }
 .btn-card:hover {
     border: 1px solid salmon !important;
@@ -63,6 +89,11 @@ footer {
     height: 120px !important;
     background-color: #BDC9B8 !important;
     margin-top: 120px !important;
+}
+footer .auto-booster-logo {
+    position: relative !important;
+    left: 80px !important;
+    top: 4px !important;
 }
 .social-media {
     padding-top: 36px !important;
@@ -77,6 +108,8 @@ footer {
 .afternote {
     font-size: 12px !important;
     font-weight: 700;
+    padding-right: 12px !important;
+    padding-left: 12px !important;
 }
 .afternote>a {
     color: white !important;
@@ -91,27 +124,45 @@ footer {
 }
 
 @media (max-width: 768px) {
+    nav .auto-booster-logo {
+        position: absolute !important;
+        left: 40px !important;
+    } 
+    .positive-edge {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .recommended-menu {
+        position:  relative !important;
+        top: -60px !important;
+    }       
+    .recommended-menu h3 {
+        font-size: 18px !important;
+        text-align: center !important;
+        font-weight: 600 !important;
+        margin: 0px !important;
+    }
+    .recommended-menu .card-title {
+        font-size: 12px !important;
+    }
     .btn-card {
         left: 12px !important;
         right: 100px !important;
         bottom: -16px !important;
-    }
-    nav .auto-booster-logo {
-        position: absolute !important;
-        left: 40px !important;
-    }
-    .afternote {
         font-size: 10px !important;
-        position: relative !important;
-        top: -12px !important;
+        min-width: 80px !important;
     }
-}
-
-@media (min-width: 768px) {
     footer .auto-booster-logo {
         position: relative !important;
-        top: -4px !important;
+        left: 40px !important;
     }
+    footer .afternote {
+        font-size: 10px !important;
+        position: relative !important;
+        top: -4px !important;
+        padding-right: 24px !important;
+    }
+   
 }
 
 @media (min-width: 992px) {
@@ -124,5 +175,9 @@ footer {
     .card .btn-card {
         font-size: 20px !important;
         font-weight: 100 !important;
+    }
+    footer .auto-booster-logo {
+        position: relative !important;
+        top: -4px !important;
     }
 }
