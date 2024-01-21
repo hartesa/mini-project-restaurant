@@ -30,8 +30,47 @@ a:hover {
 }
 
 .container {
-        margin-right: auto !important;
-    }
+    margin-right: auto !important;
+}
+.modal-dialog {
+    margin-right: auto !important;;
+}
+.hero {
+    position: relative;
+    text-align: center;
+}
+.hero-img {
+    width: 100% !important;
+}
+.text-over-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: fit-content !important;
+}
+.text-over-hero .title {
+    color: white !important;
+    font-size: 55px !important;
+    text-shadow: 2px 5px 5px black !important;
+    width: 90vw !important;
+}
+.text-over-hero .desc {
+    color: white !important;
+    font-size: 14px !important;
+    text-shadow: 2px 5px 5px black !important;
+
+}
+.text-over-hero .btn {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    padding: 14px !important;
+    box-shadow: 1px 1px 5px rgba(0,0,0,50%) !important;;
+}
+.text-over-hero .btn:hover {
+    background: none !important;
+    color: white !important;;
+}
 .positive-edge, .recommended-menu {
     margin-top: 120px !important;
 }
@@ -81,6 +120,8 @@ a:hover {
 }
 .card-title {
     font-family: Orienta, sans-serif !important;
+    text-align: left !important;    
+
 }
 .btn-card {
     color:#307510 !important;
@@ -133,29 +174,42 @@ footer .auto-booster-logo {
 .afternote>a:hover {
     color: #307510 !important;
     border-bottom: none !important;
-
 }
 
-@media (max-width: 300px) {
-
+@media (max-width:300px) {
+    .recommended-menu img {
+    min-width: 130px !important;
+    }
 }
-
-
 @media (max-width: 768px) {
     nav .auto-booster-logo {
         position: absolute !important;
         left: 40px !important;
     } 
+    .text-over-hero {
+        width: 100vw !important;
+    }
+    .text-over-hero .title {
+        font-size: 24px !important;;
+    }
+    .text-over-hero .desc {
+        display: none !important;
+        visibility:  hidden !important;
+    }
+    .text-over-hero .btn {
+        font-size: 12px !important;
+        padding: 12px !important;
+        color: white !important;
+        background: none !important;
+    }
     .positive-edge {
         display: none !important;
         visibility: hidden !important;
     }
-
     .recommended-menu {
         position:  relative !important;
         top: -60px !important;
     }       
-   
     .recommended-menu h3 {
         font-size: 18px !important;
         text-align: center !important;
@@ -175,6 +229,10 @@ footer .auto-booster-logo {
     footer .auto-booster-logo {
         position: relative !important;
         left: 40px !important;
+    }
+    footer .social-media-icons {
+        padding: 0px !important;
+        padding-top: 8px !important;
     }
     footer .afternote {
         font-size: 10px !important;
@@ -203,5 +261,14 @@ footer .auto-booster-logo {
     footer .auto-booster-logo {
         position: relative !important;
         top: -4px !important;
+    }
+}
+
+@media (min-width: 1100px) {
+    .text-over-hero .title {
+        font-size: 76px !important;
+    }
+    .text-over-hero .desc {
+        font-size: 20px !important;
     }
 }
