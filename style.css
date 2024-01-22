@@ -33,7 +33,9 @@ a:hover {
     margin-right: auto !important;
 }
 .modal-dialog {
-    margin-right: auto !important;;
+    margin-left: 0px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 .hero {
     position: relative;
