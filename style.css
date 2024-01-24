@@ -31,6 +31,9 @@ a:hover {
 
 .container {
     margin-right: auto !important;
+     margin-left: 0px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 .modal-dialog {
     margin-left: 0px !important;
