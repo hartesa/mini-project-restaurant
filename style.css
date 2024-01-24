@@ -36,6 +36,7 @@ a:hover {
 }
 .modal, .modal-backdrop {
    min-width: 468px !important; 
+   height: 100%  !important;
 }
 .hero {
     position: relative;
