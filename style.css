@@ -29,16 +29,13 @@ a:hover {
     color: salmon !important;
 }
 
-.container {
-    margin-right: auto !important;
-     margin-left: 0px !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-}
-.modal-dialog {
+.container, .modal-dialog {
     margin-left: 0px !important;
     margin-right: auto !important;
     margin-left: auto !important;
+}
+.modal, .modal-backdrop {
+   min-width: 468px !important; 
 }
 .hero {
     position: relative;
