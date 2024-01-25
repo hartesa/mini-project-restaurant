@@ -4,7 +4,7 @@
 }
     body {
     font-family: 'Nunito', sans-serif !important;
-    min-width: 468px !important;
+    /* min-width: 468px !important; */
 }
 
 h3 {
@@ -29,14 +29,25 @@ a:hover {
     color: salmon !important;
 }
 
+/* header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 2  !important;
+    background-color: rgba(255,255,255,40%);
+} */
 .container, .modal-dialog {
     margin-left: 0px !important;
     margin-right: auto !important;
     margin-left: auto !important;
 }
+.modal-dialog {
+    min-width: 200px !important;
+    width: 100vw !important;
+}
 .modal, .modal-backdrop {
-   min-width: 468px !important; 
+   /* min-width: 468px !important;  */
    height: 100%  !important;
+   padding: 0px !important;
 }
 .hero {
     position: relative;
@@ -44,6 +55,10 @@ a:hover {
 }
 .hero-img {
     width: 100% !important;
+    /* position: sticky !important;
+    top: 0 !important; */
+    /* left: 0px !important; */
+    /* z-index: -1 !important; */
 }
 .text-over-hero {
     position: absolute;
@@ -73,6 +88,9 @@ a:hover {
 .text-over-hero .btn:hover {
     background: none !important;
     color: white !important;;
+}
+.content {
+    background-color: white !important;;
 }
 .positive-edge, .recommended-menu {
     margin-top: 120px !important;
@@ -141,6 +159,60 @@ a:hover {
     border: 1px solid salmon !important;
 }
 
+.about-us {
+    padding: 20px !important;
+}
+.about-us-title h2 {
+    text-align: center !important;
+    font-size: 80px !important;
+    margin: 80px 0 !important;
+}
+.about-us-text {
+    height: 80vh !important;
+    overflow: auto  !important;
+}
+.about-us-text::-webkit-scrollbar {
+    display: none !important;
+}
+.about-us-img {
+    padding-right: 0 !important;
+    position: relative !important;
+    right: -4em !important;
+    /* min-width: 200% !important; */
+    /* object-fit: cover !important;  */
+    /* transform: scaleX(1.5);
+    transform: scaleY(1.5); */
+}
+/* .img-fluid {
+    max-width: 300% !important;
+} */
+.about-us-text h3 {
+    font-size: 60px !important;
+}
+.about-us-text p {
+    font-size: 34px !important;
+}
+.current-branch-title h4 {
+    margin: 50px !important;
+    font-size: 40px !important;
+    text-align: center !important;
+}
+.current-branch-card, .current-branch-card .card-img-top {
+    min-width: 200px !important;
+    max-width: 300px !important;
+}
+.current-branch-card{
+    border: none !important;
+}
+.current-branch-card .card-body .btn {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: white !important;
+}
+.current-branch-card .card-body .btn:hover {
+    background-color: white !important;
+    border: 1px solid !important;
+} 
+
 footer {
     width: auto !important;
     height: 120px !important;
@@ -179,11 +251,8 @@ footer .auto-booster-logo {
     border-bottom: none !important;
 }
 
-@media (max-width:300px) {
-    .recommended-menu img {
-    min-width: 130px !important;
-    }
-}
+
+
 @media (max-width: 768px) {
     nav .auto-booster-logo {
         position: absolute !important;
@@ -273,5 +342,62 @@ footer .auto-booster-logo {
     }
     .text-over-hero .desc {
         font-size: 20px !important;
+    }
+}
+@media (max-width: 450px) {
+    .auto-booster-logo svg{
+        width: 60px !important;
+        position: relative !important;
+        top: 4px !important;
+    }
+     .text-over-hero .title {
+        display: none !important;
+    }
+    footer .auto-booster-logo svg {
+        width: 60px !important;
+    }
+    footer .afternote {
+       font-size: 8px !important;
+    }
+}
+@media (max-width: 468px) {
+    .nav-padding {
+        display: none !important;
+    }
+}
+
+@media (max-width:350px) {
+    header nav .auto-booster-logo {
+        position: relative !important;
+        left: 20px !important;
+    }
+    .recommended-menu .card-title {
+        font-size: 10px !important;
+    }
+    .recommended-menu .btn-card {
+        font-size: 8px !important;
+        margin-top: -12px !important;
+    }
+    .recommended-menu img {
+    min-width: 100px !important;
+    }
+    .menu-link a {
+        font-size: 8px !important;
+    }
+    .nav-padding {
+        display: none !important;
+    }
+    footer .auto-booster-logo {
+        position: relative !important;
+        left: 16px !important;
+    }
+    footer .afternote, .afternote a {
+        font-size: 8px !important;
+    }
+    .social-media-icons svg{
+        width: 12px !important;
+    }
+    .afternote a svg {
+        display: none !important;
     }
 }
