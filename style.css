@@ -30,7 +30,7 @@ a:hover {
     color: salmon !important;
 }
 
-/* header {
+/* body header nav {
     position: sticky !important;
     top: 0 !important;
     z-index: 2  !important;
@@ -51,19 +51,39 @@ a:hover {
    padding: 0px !important;
 }
 .hero {
-    position: relative;
+    /* position: relative; */
     text-align: center;
-}
-.hero-img {
+    
+    background-image: url("media/h2.png");
     width: 100% !important;
-    /* position: sticky !important;
-    top: 0 !important; */
-    /* left: 0px !important; */
-    /* z-index: -1 !important; */
+    height: 500px !important;
+    /* object-fit: cover !important; */
+    background-attachment: fixed;
+  background-position: 70% -40%;
+  background-repeat: no-repeat;
+  background-size: auto 65% !important;
+  /* background-size: cover !important; */
+  /* object-fit: cover !important; */
+  
 }
+/* .hero-img {
+    width: 100% !important;
+    height: 400px !important;
+    /* object-fit: cover !important; */
+    /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+    /* position: absolute;
+    top: 0 !important; */
+    /* scale: 1.5  !important; */
+    /* left: 0px !important; */
+    /* z-index: -1 !important;
+ } */
+
 .text-over-hero {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: fit-content !important;
@@ -370,8 +390,12 @@ a.afternote:hover {
         position: absolute !important;
         left: 40px !important;
     } 
+    .hero {
+        height: 300px !important;
+    }
     .text-over-hero {
         width: 100vw !important;
+        top: 22% !important;
     }
     .text-over-hero .title {
         font-size: 24px !important;
@@ -446,6 +470,12 @@ a.afternote:hover {
         width: 60px !important;
         position: relative !important;
         top: 4px !important;
+    }
+    .hero {
+        height: 200px !important;
+    }
+    .text-over-hero {
+        top: 30% !important;
     }
      .text-over-hero .title {
         display: none !important;
