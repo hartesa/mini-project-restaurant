@@ -157,7 +157,17 @@ a:hover {
     font-size: 12px !important;
     min-width: 100px !important;
 }
-.btn-card:hover {
+.btn-menu {
+    color:#307510 !important;
+    border: 1px solid #307510 !important;
+    box-shadow: 1px 2px 4px #BDC9B8;   
+    background-color: white !important;;
+    font-size: 12px !important;
+    min-width: 100px !important;
+    position: relative !important;
+    top: -4px !important;
+}
+.btn-card:hover, .btn-menu:hover {
     border: 1px solid salmon !important;
 }
 
@@ -171,7 +181,7 @@ a:hover {
     /* height: 80vw !important; */
     max-width: 100% !important;
 }
-.about-us-title h2 {
+.about-us-title h2, .our-menu-title h2, .contact-us-title h2 {
     text-align: center !important;
     font-size: 100px !important;
     font-weight: 700 !important;
@@ -223,7 +233,22 @@ a:hover {
     background-color: white !important;
     border: 1px solid !important;
 } 
+/* MENU */
+.carousel-item-body h3 {
+    font-family: Orienta, sans-serif;
+    font-size: 48px !important;
+}
+.carousel-item-body p {
+    font-family: Nunito, sans-serif;
+    font-weight: 100;
+    font-size: 24px !important;
+    text-align: justify;
+}
+.carousel-item-body p strong {
+    font-weight: 700;
+}
 
+/* FOOTER */
 footer {
     width: auto !important;
     height: auto !important;
@@ -370,6 +395,10 @@ a.afternote:hover {
         font-size: 10px !important;
         min-width: 80px !important;
     }
+    .carousel-control-prev, .carousel-control-next{
+        top: -50% !important;
+    }
+
     footer .auto-booster-logo {
         position: relative !important;
         left: 40px !important;
@@ -384,7 +413,7 @@ a.afternote:hover {
         top: -4px !important;
         padding-right: 24px !important;
     }   */
-    .about-us-title h2 {
+    .about-us-title h2, .our-menu-title h2, .contact-us-title h2 {
         font-size: 68px !important;
     }
     .about-us-text h3 {
@@ -412,7 +441,7 @@ a.afternote:hover {
     /* footer .afternote {
        font-size: 8px !important;
     } */
-     .about-us-title h2 {
+     .about-us-title h2, .our-menu-title h2, .contact-us-title h2 {
         font-size: 50px !important;
     }
     .about-us .container {
@@ -423,6 +452,19 @@ a.afternote:hover {
     }
     .about-us-text p {
         font-size: 24px !important;
+    }
+    .carousel-item-body h3 {
+    font-family: Orienta, sans-serif;
+    font-size: 24px !important;
+    }
+    .carousel-item-body a {
+        margin-top: 20px !important;
+        font-size: 8px !important;
+    }
+    .carousel-item-body p {
+    font-family: Nunito, sans-serif;
+    font-weight: 100;
+    font-size: 12px !important;
     }
 }
 @media (max-width: 468px) {
@@ -467,7 +509,7 @@ a.afternote:hover {
     /* .afternote a svg {
         display: none !important;
     } */
-    .about-us-title h2 {
+    .about-us-title h2, .our-menu-title h2, .contact-us-title h2{
         font-size: 40px !important;
     }
     .about-us .container {
