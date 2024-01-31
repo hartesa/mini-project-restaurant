@@ -203,6 +203,8 @@ a:hover {
     right: 0 !important;
     padding-right: -40px !important;
     object-fit: fill !important;
+    border-radius: 100px 0 0px 100px !important;
+
     /* object-position: 25% 25% !important; */
 }
 .about-us-text h3 {
@@ -337,9 +339,10 @@ a.afternote:hover {
     .text-over-hero .desc {
         font-size: 20px !important;
     }
-        /* .about-us .container {
-    margin-left: 120px !important;
-} */
+    .about-us-img {
+        height: 950px !important;
+        object-fit: cover   !important;
+    }
 }
 @media (min-width: 992px) {
     .positive-edge .icon-5 span, .positive-edge .icon-6 span {
