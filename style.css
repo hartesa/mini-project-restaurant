@@ -247,6 +247,18 @@ a:hover {
 .carousel-item-body p strong {
     font-weight: 700;
 }
+/* CONTACT */
+.contact-branch .title h3{
+    font-size: 32px !important;
+}
+.contact-us a {
+    color: #307510 !important;
+}
+.contact-us a:hover {
+    color: salmon !important;
+    border: none !important;
+}
+
 
 /* FOOTER */
 footer {
